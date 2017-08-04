@@ -28,4 +28,15 @@ input [575:0] A;
 ```
 (The value of 575 comes from having 9 spaces of 64 bits).
 
-Similarly, if you need to modify the program to work with a *n***n* matrix, 
+Similarly, if you need to modify the program to work with a *n***n* matrix, just modify 
+```verilog
+{A1[0][0],A1[0][1],A1[0][2],A1[1][0],A1[1][1],A1[1][2],A1[2][0],A1[2][1],A1[2][2]} = A;
+```
+in the calculator module to work with the correct amount of cells.
+
+## Visualization
+
+This code was run in Xilinx ISE. When running the simulation, only the result was viewable as a one dimensional array. In order to fix this, in the simulation window:
+1. Add the matrixes from the *Calculator.v* to the simulation.
+2. Change the Radix to *signed integer*.
+3. Relaunch the simulation.
