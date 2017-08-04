@@ -11,3 +11,18 @@ There are some details about this implementation:
 ```verilog
 reg [15:0] A1 [0:2][0:2];
 ```
+to something like 
+
+```verilog
+reg [63:0] A1 [0:2][0:2];
+```
+in the case you want to work with 64 bits. Also remember to modify
+
+```verilog
+input [143:0] A;
+```
+to
+```verilog
+input [575:0] A;
+```
+(The value of 575 comes from having 9 spaces of 64 bits).
