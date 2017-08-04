@@ -42,3 +42,10 @@ This code was run in Xilinx ISE. When running the simulation, only the result wa
 3. Relaunch the simulation.
 
 ![Run example](/images/verilog_matrix_mult.png?raw=true)
+
+## 1D to 2D and 2D to 1D remapping
+
+The transformation from 1D to 2D is done in the code
+```verilog
+{A1[0][0],A1[0][1],A1[0][2],A1[1][0],A1[1][1],A1[1][2],A1[2][0],A1[2][1],A1[2][2]} = A;
+```
