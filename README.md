@@ -49,3 +49,8 @@ The transformation from 1D to 2D is done in the code
 ```verilog
 {A1[0][0],A1[0][1],A1[0][2],A1[1][0],A1[1][1],A1[1][2],A1[2][0],A1[2][1],A1[2][2]} = A;
 ```
+where the 2D matrix *A1* is populated from the 1D array *A*. Similarly, the remapping from 2D to 1D is done in
+```verilog
+Result = {Res1[0][0],Res1[0][1],Res1[0][2],Res1[1][0],Res1[1][1],Res1[1][2],Res1[2][0],Res1[2][1],Res1[2][2]};
+```
+as 2D arrays cannot be outputs of modules.
