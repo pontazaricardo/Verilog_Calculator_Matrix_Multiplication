@@ -40,3 +40,5 @@ This code was run in Xilinx ISE. When running the simulation, only the result wa
 1. Add the matrixes from the *Calculator.v* to the simulation.
 2. Change the Radix to *signed integer*.
 3. Relaunch the simulation.
+
+![Run example](/images/verilog_matrix_mult.png?raw=true)
