@@ -41,7 +41,7 @@ This code was run in Xilinx ISE. When running the simulation, only the result wa
 2. Change the Radix to *signed integer*.
 3. Relaunch the simulation.
 
-![Run example](/images/verilog_matrix_mult.png?raw=true)
+![Run example](/images/verilog_matrix_mult.gif?raw=true)
 
 ## 1D to 2D and 2D to 1D remapping
 
